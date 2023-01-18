@@ -1,11 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 0;
@@ -22,12 +18,11 @@ body {
     align-items: center;
     width: 100%;
     height: 80px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 #menu img{
     width: 100px;
-    margin-left: 10px;
 }
 
 #menu ul{
@@ -42,12 +37,13 @@ body {
 #menu ul li a{
     display: inline-block;
     font-family: Merriweather;
+    font-size: 30px;
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     background-color: inherit;
-    padding: 10px 20px;
+    padding: 20px 20px;
     line-height: 80px;
-    font-weight: bold;
     color: rgb(51, 90, 79);
     transition:color 0.5s linear;
 }
@@ -60,7 +56,7 @@ body {
     margin: 0 auto;
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -78,9 +74,9 @@ body {
 
 .image img{
     position: absolute;
-    width: 200%;
-    height: 500px;
-    top: -30px;
+    width: 180%;
+    height: 462px;
+    top: 20px;
 }
 
 .text h1{
@@ -93,5 +89,6 @@ body {
 .text p{
     color: rgba(141, 141, 141, 0.978);
     font-size: 20px;
+    line-height: 2em;
 }
 
