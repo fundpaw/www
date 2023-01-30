@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fundraising Website</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../features/blog.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+    <div id="main wrapper">
+        <nav>
+            <div id="menu">
+                <div class="logo-container">
+                    <img src="../assets/paw_logo_128.png" class="logo" />
+                    <span>fundpaw</span>
+                </div>
+                <ul>
+                    <li><a href="../www/features/ideas.html">Ideas</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('gen')"> General Fundraising</button>
+            <button class="btn" onclick="filterSelection('hol')"> Holidays Fundraising</button>
+            <button class="btn" onclick="filterSelection('foo')">Paw Needs Fundraising</button>
+            <button class="btn" onclick="filterSelection('vir')"> Event Fundraising</button>
+        </div>
+
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container">
+            <div class="filterDiv gen" onclick=""><a href="#raf"></a>Raffles</div>
+            <div class="filterDiv vir">Art Paws</div>
+            <div class="filterDiv gen">Silent Auction</div>
+            <div class="filterDiv vir">Raise the Woof</div>
+            <div class="filterDiv gen">Yoga with kittens</div>
+            <div class="filterDiv vir">Pie for Paws</div>
+            <div class="filterDiv vir">Play with Paws</div>
+            <div class="filterDiv gen">Pet-Friendly bake sale</div>
+            <div class="filterDiv hol">Valentine's Day</div>
+            <div class="filterDiv gen">Bark Park</div>
+            <div class="filterDiv hol">Easter Day</div>
+            <div class="filterDiv gen">Dog/Cat Walkathon</div>
+            <div class="filterDiv foo">Paw Grooming</div>
+            <div class="filterDiv hol">Halloween's Day</div>
+            <div class="filterDiv foo">Paw Treats</div>
+            <div class="filterDiv foo">Paw Beds</div>
+            <div class="filterDiv hol">Thanksgiving Day</div>
+            <div class="filterDiv hol">Christmas Day</div>
+        </div>
+
+        <div>
+            <p id="raf">Raffles for Dogs hskalkslaslahsljalsjlajslajsla</p>
+        </div>
+
+    <script src="../features/blog.js"></script>
+</body>
+
+</html>

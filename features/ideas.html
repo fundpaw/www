@@ -4,8 +4,9 @@
 <head>
     <title>Fundraising Website</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../features/ideas.css">
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="../features/sample.css">
+    <link rel="stylesheet" href="ideas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -23,43 +24,88 @@
                 </ul>
             </div>
         </nav>
+    </div>
 
-        <!-- Control buttons -->
+
+
+    <div class="filter1">
+        <h1 class="main-h1">FILTER</h1>
+        <div class="category">
+            <h1>CATEGORY</h1>
+            <form>
+                <input type="text" name="search" placeholder="All Categories">
+            </form>
+            <h1>COST</h1>
+            <form>
+                <input type="text" name="search" placeholder="Free & Cheap">
+            </form>
+            <h1>TAGS</h1>
+            <ul class="checkbox">
+                <li><input type="checkbox" id="cb1" value="fav" /><label for="cb1">Favorites</label></li>
+                <li><input type="checkbox" id="cb2" value="onetime" /><label for="cb2">One-time Fundraising</label></li>
+                <li><input type="checkbox" id="cb3" value="holiday" /><label for="cb3">Holiday Fundraising</label></li>
+                <li><input type="checkbox" id="cb4" value="virtual" /><label for="cb4">Virtual</label></li>
+        </div>
+
+    </div>
+
+
+    <div class="filter2">
+        <div class="header1">
+            <h1><a href="../index.html">Home</a><i class="fa fa-home" style="font-size:48px;color:aquamarine;"></i></li>
+            </h1>
+        </div>
+
         <div id="myBtnContainer">
             <button class="btn active" onclick="filterSelection('all')"> Show all</button>
             <button class="btn" onclick="filterSelection('gen')"> General Fundraising</button>
-            <button class="btn" onclick="filterSelection('hol')"> Holidays Fundraising</button>
-            <button class="btn" onclick="filterSelection('foo')">Paw Needs Fundraising</button>
-            <button class="btn" onclick="filterSelection('vir')"> Event Fundraising</button>
+            <button class="btn" onclick="filterSelection('hol')"> Holiday Fundraising</button>
+            <button class="btn" onclick="filterSelection('eve')"> Event Fundraising</button>
+            <button class="btn" onclick="filterSelection('paw')"> Paw Needs Fundraising</button>
         </div>
 
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-        <div class="container">
-            <div class="filterDiv gen" onclick=""><a href="#raf"></a>Raffles</div>
-            <div class="filterDiv vir">Art Paws</div>
-            <div class="filterDiv gen">Silent Auction</div>
-            <div class="filterDiv vir">Raise the Woof</div>
-            <div class="filterDiv gen">Yoga with kittens</div>
-            <div class="filterDiv vir">Pie for Paws</div>
-            <div class="filterDiv vir">Play with Paws</div>
-            <div class="filterDiv gen">Pet-Friendly bake sale</div>
-            <div class="filterDiv hol">Valentine's Day</div>
-            <div class="filterDiv gen">Bark Park</div>
-            <div class="filterDiv hol">Easter Day</div>
-            <div class="filterDiv gen">Dog/Cat Walkathon</div>
-            <div class="filterDiv foo">Paw Grooming</div>
-            <div class="filterDiv hol">Halloween's Day</div>
-            <div class="filterDiv foo">Paw Treats</div>
-            <div class="filterDiv foo">Paw Beds</div>
-            <div class="filterDiv hol">Thanksgiving Day</div>
-            <div class="filterDiv hol">Christmas Day</div>
-        </div>
+        <div class="row">
+            <div class="column gen">
+                <img src="../assets/raffle.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column gen">
+                <img src="../assets/paw.png" alt="Mountains" style="width:100%">
+            </div>
+            <div class="column gen">
+                <img src="../assets/yoga.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column hol">
+                <img src="../assets/christmas.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column hol">
+                <img src="../assets/halloween.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column hol">
+                <img src="../assets/valentines.png" alt="Mountains" style="width:100%">
+            </div>
+            <div class="column eve">
+                <img src="../assets/art.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column eve">
+                <img src="../assets/raise.jpg" alt="Mountains" style="width:100%">
+            </div>
+            <div class="column eve">
+                <img src="../assets/pie.png" alt="Forest" style="width:100%">
+            </div>
+            <div class="column paw">
+                <img src="../assets/groom.jpg" alt="Mountains" style="width:100%">
+            </div>
+            <div class="column paw">
+                <img src="../assets/treats.png" alt="Mountains" style="width:100%">
+            </div>
+            <div class="column paw">
+                <img src="../assets/bed.jpg" alt="Mountains" style="width:100%">
+            </div>
 
-        <div>
-            <p id="raf">Raffles for Dogs hskalkslaslahsljalsjlajslajsla</p>
         </div>
-
+    </div>
     <script src="../features/ideas.js"></script>
+
 </body>
 
 </html>
