@@ -48,6 +48,11 @@ body {
     color: aquamarine;
 }
 
+#menu ul li :active{
+    color: aquamarine;
+}
+
+
 #content{
     margin: 0 auto;
     width: 80%;
