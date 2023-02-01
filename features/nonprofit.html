@@ -4,115 +4,26 @@
 <head>
     <title>Fundraising Website</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../features/nonprofit.css">
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="../features/donate.css">
+    <link rel="stylesheet" href="ideas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <h2>Fundraising Ideas</h2>
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('gen')"> General Fundraising</button>
-      <button class="btn" onclick="filterSelection('hol')"> Holiday Fundraising</button>
-      <button class="btn" onclick="filterSelection('eve')"> Event Fundraising</button>
-      <button class="btn" onclick="filterSelection('paw')"> Paw Needs Fundraising</button>
-    </div>
-    
-    <div class="row">
-      <div class="column gen">
-        <div class="content">
-          <img src="../assets/raffle.png" alt="Raffle" style="width:100%">
-          <h4>Raffles</h4>
-          <p>Themed raffle basket prizes consist of assorted items whose whole is greater than the sum of its parts.</p>
-        </div>
-      </div>
-      <div class="column gen">
-        <div class="content">
-          <img src="../assets/paw.png" alt="Silent Auction" style="width:100%">
-          <h4>Silent Auction</h4>
-          <p>“We have some great items up for auction this year,” We hope people will want to come out to support our cause,
-             get some great gifts and have an awesome time!”</p>
-        </div>
-      </div>
-      <div class="column gen">
-        <div class="content">
-          <img src="../assets/yoga.jpg" alt="Yoga" style="width:100%">
-          <h4>Yoga with Kittens</h4>
-          <p>Do Yoga with our fury friends! Quality time!</p>
-        </div>
-      </div>
-    
-      <div class="column hol">
-        <div class="content">
-          <img src="../assets/valentines.png" alt="valentines" style="width:100%">
-          <h4>Valentine's Day!</h4>
-          <p>The event was touted as a pup and people happy hour and offered snacks, prizes, treats and even doggy blind dates.</p>
-        </div>
-      </div>
-      <div class="column hol">
-        <div class="content">
-          <img src="../assets/halloween.jpg" alt="Halloween" style="width:100%">
-          <h4>Halloween</h4>
-          <p>Wag-O-Ween is a great way to have a more formal fundraiser that will be filled with fun and costumes. </p>
-        </div>
-      </div>
-      <div class="column hol">
-        <div class="content">
-          <img src="../assets/christmas.jpg" alt="Christmas" style="width:100%">
-          <h4>Christmas</h4>
-          <p> All you need is a backdrop and some festive decorations like ribbons, wrapped presents, and fairy lights. Finally, invite pet owners to come and have their pets pictures taken with Santa. 
-            Charge a few dollars for each photo and hand out doggie bags with festive treats to sweeten the deal!  </p>
-        </div>
-      </div>
-    
-      <div class="column eve">
-        <div class="content">
-          <img src="../assets/art.png" alt="Art" style="width:100%">
-          <h4>Art Paws</h4>
-          <p>Art Paws features animal art, pet people, wine and beer tastings, canine contests and demos.</p>
-        </div>
-      </div>
-      <div class="column eve">
-        <div class="content">
-          <img src="../assets/raise.jpg" alt="Raise" style="width:100%">
-          <h4>Raise the Woof!</h4>
-          <p>“I would really like us to sell out. I think we can hold up to 200 people and it is just more fun when you have a nice full room with everyone laughing and having fun.
-            It is a great way to meet up with some friends,”</p>
-        </div>
-      </div>
-      <div class="column eve">
-        <div class="content">
-          <img src="../assets/pie.png" alt="Pie" style="width:100%">
-          <h4>Pie for Paws!</h4>
-          <p> Every pie order goes back to the cats and dogs of Helping Paws! Thank you for your continued support.</p>
-        </div>
-      </div>
-
-      <div class="column paw">
-        <div class="content">
-          <img src="../assets/groom.jpg" alt="Groom" style="width:100%">
-          <h4>Paw Grooming</h4>
-          <p>Event to groom animals in need! Pet care!</p>
-        </div>
-      </div>
-      <div class="column paw">
-        <div class="content">
-          <img src="../assets/treats.png" alt="Treats" style="width:100%">
-          <h4>Paw Treats</h4>
-          <p>Time to give furry friends treat!</p>
-        </div>
-      </div>
-      <div class="column paw">
-        <div class="content">
-          <img src="../assets/bed.jpg" alt="Bed" style="width:100%">
-          <h4>Paw Beds</h4>
-          <p>This is for giving animals in need a comforable place to sleep!</p>
-        </div>
-      </div>
-
+    <div id="main wrapper">
+        <nav>
+            <div id="menu">
+                <div class="logo-container">
+                  <a href="../index.html"><img src="../assets/paw_logo_128.png" class="logo"/></a>
+                    <span>fundpaw</span>
+                </div>
+                <ul>
+                    <li><a href="../features/ideas.html">Ideas</a></li>
+                    <li><a href="../features/nonprofit.html">Non-profit</a></li>
+                    <li><a href="../features/blog.html">Blog</a></li>
+                    <li><a href="../features/donate.html">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <script src="../features/nonprofit.js"></script>
-</body>
-
-</html>
