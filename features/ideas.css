@@ -101,7 +101,7 @@ div#main\ wrapper {
 
 .filter1{
     background-color: #efefef;
-    width:14.55%;
+    width:14.50%;
     float: left;
     height: 100%;
     border: ridge;
@@ -112,8 +112,12 @@ div#main\ wrapper {
     background-color: #efefef;
     width:85%;
     float: right;
-    height: 100%;
     border-top: ridge;
+    /*
+    border: 1px solid black;
+    overflow-y:scroll;
+    overflow-x:scroll;
+    */
 
 }
 
