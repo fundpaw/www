@@ -96,3 +96,42 @@ div#main\ wrapper {
     font-size: 23px;
     color: #5a8690;
 }
+
+
+
+
+
+h1 {
+    margin: auto;
+    font-size: 31px;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgba(141, 141, 141, 0.978);
+    display: block;
+    border: black;
+    border: solid;
+    height: 80px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-color: rgb(146, 238, 254);
+    padding-top: 40px;
+}
+/*
+.box1{
+    background-color:red;
+    width:100%;
+    float: top;
+    height: 20%;
+    border: ridge;
+
+}
+*/
+
+.box2{
+    background-color: #efefef;
+    width:100%;
+    height: 90%;
+    float: bottom;
+}
