@@ -17,6 +17,7 @@ body {
 #menu img{
     width: 2em;
     margin-right: 0.5em;
+    cursor: pointer;
 }
 
 #menu ul{

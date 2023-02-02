@@ -138,4 +138,36 @@ h1 {
     width: 500px;
     height: 700px;
     background-color: rgb(244, 244, 237);
+    margin-left: 100px;
+    margin-top: 50px;
 }
+
+.image{
+    width: 500px;
+    height: 500px;
+    margin-left: 120px;
+    margin-top:50px;
+}
+
+.table {
+	display: table; 
+	margin: 0 auto;
+    background-color: #d0dee7;
+    width: 500px;
+}
+
+ul#horizontal-list {
+	min-width: 400px;
+	list-style: none;
+	padding: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 3px;
+	}
+
+ul#horizontal-list li {
+	display: inline;
+    padding: 15px;
+	}
+
+
