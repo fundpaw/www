@@ -120,14 +120,14 @@ h1 {
 }
 
 .box1{
-    background-color: #d88d8d;
+    background-color: #fafafa;
     width:50%;
     float: left;
     height: 100%;
 }
 
 .box2{
-    background-color: #9c8dd9;
+    background-color:#fafafa;
     width:50%;
     float: right;
     height: 100%;
@@ -137,7 +137,7 @@ h1 {
     border: 2px solid black;
     width: 500px;
     height: 700px;
-    background-color: rgb(244, 244, 237);
+    background-color: #f7f9f9;
     margin-left: 100px;
     margin-top: 50px;
 }
@@ -203,4 +203,51 @@ h2{
 .amount-box{
     margin-left: 30px;
     margin-right: 30px;
+}
+
+#myBtnContainer{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 400px;
+}
+
+.checkbox{
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.donate-submit {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+    background-color: rgb(107, 183, 210);
+    color: white;
+    padding: 7px;
+    width: 100px;
+}
+
+.submit{
+    border-bottom: 1px ridge rgb(132, 131, 131);
+    padding-bottom: 30px;
+    
+}
+
+.payment-title p{
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-left: 40px;
+}
+
+
+.column-paylogo{
+    width: 300px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    padding: 9px;
 }
