@@ -163,11 +163,39 @@ ul#horizontal-list {
     font-family: sans-serif;
     font-size: 20px;
     padding-top: 3px;
-	}
+}
 
 ul#horizontal-list li {
 	display: inline;
     padding: 15px;
-	}
+}
 
+input[type=amount] {
+    background-color: #7dadd5;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 18px;
+}
 
+input[type=other] {
+    background-color: #cccccc;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 18px;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
