@@ -145,7 +145,7 @@ a.picture:hover{
     transform: scale(1.02);
     transition: all;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgb(184, 64, 62);
+    box-shadow: 0 0 20px rgb(116, 199, 177);
 }
 
 .row {
