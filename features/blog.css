@@ -130,8 +130,58 @@ h1 {
 */
 
 .box2{
-    background-color: #efefef;
+    background-color:#f7f9f9;
     width:100%;
     height: 100%;
     float: bottom;
+}
+
+
+
+
+
+
+a.picture:hover{
+    transform: scale(1.02);
+    transition: all;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(184, 64, 62);
+}
+
+.row {
+    display: flex;
+    gap: 20;
+    grid-column: 1/-1;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    gap: 40px;
+    margin-top: 8vh;
+   
+  }
+  
+.column {
+    background: lightblue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+.column .picture {
+    background: #f7f9f9;
+    flex: 1;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+.column + .column {
+    margin-left: 2em;
+}
+.column .title {
+    font-size: x-large;
+    background: rgb(116, 176, 214);
+    color: rgb(235, 235, 235);
+    text-align: center;
 }
