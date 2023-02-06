@@ -127,36 +127,65 @@ h1 {
 }
 */
 
-.box2{
-    background-color: #efefef;
-    width:100%;
-    height: 150%;
-    float: bottom;
+p{
+    margin: 20px;
+    font-size: medium;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h5{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image{
+    margin-left: 40px;
+    margin-right: 40px;
+    background: #ffffff;
+    width: 200px;
+    height: 300px;
+}
+
+.content{
+    border: 1px ridge gray;
+    height: 290vh;
+    padding: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #ffffff;
+}
+
+.comment-box{
+    border: 1px ridge gray;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 h2{
-    display: flex;
-    justify-content:first baseline;
-    padding: 20px;
-    padding-top: 30px;
-    margin: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    border-bottom: 1px ridge gray;
+    margin: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
     font-family: sans-serif;
-    font-size: 25px;
-    color: rgba(108, 107, 107, 0.978);
-   
+    font-size: 18px;
+    font-weight: 300;
 }
 
-p{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    padding-top: 8px;
-    margin: 0;
+input{
+    margin: 20px;
     margin-left: 30px;
-    margin-right: 30px;
+    padding: 10px;
     font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.foo {
     font-size: 20px;
-    color: rgba(108, 107, 107, 0.978);
+    font-weight:bold;
+    color: rgb(81, 115, 152);
 }
