@@ -97,7 +97,7 @@ div#main\ wrapper {
     color: #5a8690;
 }
 
-
+/* end of the logo and menus*/
 
 
 
@@ -160,7 +160,7 @@ a.picture:hover{
   }
   
 .column {
-    background: lightblue;
+    background: rgb(194, 228, 240);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -181,7 +181,13 @@ a.picture:hover{
 }
 .column .title {
     font-size: x-large;
-    background: rgb(116, 176, 214);
+    background: rgb(87 152 183);
     color: rgb(235, 235, 235);
     text-align: center;
+}
+
+.p-content {
+    color: #5e5e5e;
+    padding: 10px;
+    font-family: sans-serif;
 }
