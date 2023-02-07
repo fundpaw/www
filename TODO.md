@@ -19,4 +19,7 @@ https://mycodelesswebsite.com/responsive-website-examples/
 - ...
 
 ### identify common screens
-- login
+- login [auth0](https://auth0.com/)
+
+### resources for chat
+- maybe use this for comments [disqus](https://disqus.com/)
