@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Fundpaw Login</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+<div id="sign-in" class="form-container">
+	<div class="user-img"></div>
+	<ul class="list">
+		<li>
+			<div class="logo-image"></div>
+			<div class="appname">Fundpaw</div>
+		</li>
+		<li><input id="username" type="text" name="username" placeholder="Username"></li>
+		<li><input id="password" type="password" name="password" placeholder="Password"></li>
+		<li><input type="button" name="Login" value="Login" onclick="clickHandler()">
+			<li>
+			<a href="../index.html" target="_self">Continue as Guest
+			</a>
+		</li>
+		<li>
+			<span>Don't have an account?</span>
+			<span onclick="showSignup()">Sign up!</span>
+		</li>
+	</ul>
+</div>
+
+<div id="sign-up" class="form-container hidden">
+	<h3 class="title">Create an Account</h3>
+
+	<li><input id="sign-up-username" type="text" name="User Name" placeholder="Username"></li>
+	<li><input id="sign-up-email" type="email" name="email" placeholder="Email Address"></li>
+	<li><input id="sign-up-password" type="password" name="Password" placeholder="Password"></li>
+	<li>
+		<h5>Gender</h5>
+
+		<input type="radio" id="sign-up-gender-male" name="gender">
+		<label>Male</label>
+		<input type="radio" name="gender" checked>
+		<label>Female</label>
+	</li>
+	<li>
+		<h5>Date of Birth</h5>
+		<input type="date" id="sign-up-birthday" name="birthday">
+	</li>
+
+	<li class="submit">
+		<input type="button" value="Sign Up" onclick="createAccountClick()">
+	</li>
+
+	<div class="error hidden"></div>
+</div>
+</body>
+
+<script src="../features/login.js" type="module"></script>
+
+<script>
+	setTimeout(() => {
+		//showSignup();
+	}, 50);
+</script>
+
+</html>

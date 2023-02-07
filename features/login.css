@@ -1,0 +1,212 @@
+/* TODO */
+
+body{
+    background-image: linear-gradient(to bottom, #ffffff, #84d1dd, #aaad91);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.hidden { display: none; }
+
+h2 {
+	color: white;
+}
+
+.appname {
+	font-family: cursive;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: 1px #128ab5;
+}
+
+.logo-image {
+	background-image: url(../assets/paw_logo_256.png);
+    width: 95px;
+    height: 99px;
+    margin: auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-position-x: -2px;
+    background-position-y: -6px;
+}
+.form-container{
+	width: 253px;
+    height: auto;
+    padding: 86px 71px;
+    background-color: #8bbcdf;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #274e89;
+    margin: auto;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.75s, opacity 0.75s;
+}
+
+body.navigating .form-container {
+	transform: translateX(-65vw);
+	opacity: 0;
+}
+
+
+ul.list{
+list-style: none;
+text-align: center;
+
+}
+
+ul.list li{
+width: 250px;
+margin-bottom: 15px;
+
+}
+
+ul.list li input{
+	width: 250px;
+	text-align: center;
+	padding: 8px 0px;
+	border:none;
+	background-color: #d3d3d3;
+	border-radius: 5px;
+}
+
+ul.list li input[type="button"]{
+	background-color: #4690fb;
+	color: #fff;
+}
+
+ul.list li:nth-child(5){
+	color:#378a99;
+}
+
+ul.list li:nth-child(6) span:first-child{
+	color:red;
+}
+ul.list li:nth-child(6) span:last-child:hover {
+	color: yellow;
+}
+ul.list li:nth-child(6) span:last-child {
+	color:white;
+	cursor: pointer;
+}
+
+#sign-up li {
+	list-style: none;
+}
+
+.GoBack {
+
+}
+
+
+header{
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: exclusion;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.button{
+
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.form-container .hidden {
+	width: 250px;
+	height: auto;
+	padding: 40px 30px;
+	background-color: #313f5e;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #95aadb;
+	margin: auto;
+}
+
+#sign-up * {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+#sign-up li {
+	width: 100%;
+}
+#sign-up li + li {
+	margin-top: 1em;
+}
+#sign-up h3, h5, label {
+	color: turquoise;
+	margin-bottom: 1em;
+}
+#sign-up [type="text"],
+#sign-up [type="email"],
+#sign-up [type="password"],
+#sign-up [type="date"]
+{
+	padding: .3em;
+	width: 100%;
+}
+#sign-up input[type="radio"] {
+	margin-left: 1em;
+	margin-right: 0.5em
+}
+#sign-up .submit {
+	text-align: center;
+}
+#sign-up .submit a {
+}
+#sign-in li.button,
+#sign-up [type="button"] {
+	background: #007e8f;
+	border: 0;
+	color: white;
+	padding: 1em 2em;
+}
