@@ -131,9 +131,7 @@ h1 {
 
 .box2{
     background-color:#f7f9f9;
-    width:100%;
-    height: 100%;
-    float: bottom;
+    display: grid;
 }
 
 
@@ -148,16 +146,15 @@ a.picture:hover{
     box-shadow: 0 0 20px rgb(116, 199, 177);
 }
 
-.row {
-    display: flex;
-    gap: 20;
-    grid-column: 1/-1;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    gap: 40px;
-    margin-top: 8vh;
-   
-  }
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
   
 .column {
     background: rgb(194, 228, 240);
