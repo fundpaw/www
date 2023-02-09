@@ -148,8 +148,8 @@ a.picture:hover{
 
 .row{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
     margin-left: 20vh;
     margin-right: 20vh;
     margin-top: 10vh;
