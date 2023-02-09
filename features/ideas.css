@@ -104,7 +104,7 @@ div#main\ wrapper {
     background-color: #efefef;
     width:14.50%;
     float: left;
-    height: 125%;
+    height: 140%;
     border: ridge;
 
 }
@@ -136,7 +136,7 @@ div#main\ wrapper {
   height: 100px;
 }
   
-  .column {
+.column {
     display: none;
     flex-wrap: wrap;
     padding: 10px;
@@ -146,7 +146,7 @@ div#main\ wrapper {
     padding: 5px;
   }
 
-  .column img {
+.column img {
     float: left;
     width:  100px;
     height: 250px;
@@ -228,11 +228,11 @@ ul.checkbox li {
     border: 1px transparent solid; 
  } 
   
-  ul.checkbox li label { 
+ ul.checkbox li label { 
     margin-left: 1px; 
   } 
-  ul.checkbox li:hover, 
-  ul.checkbox li.focus  { 
+ul.checkbox li:hover, 
+ul.checkbox li.focus  { 
     background-color: lightyellow; 
     border: 1px gray solid; 
     width: 12em; 
@@ -242,15 +242,15 @@ ul.checkbox li {
 
 
 
-  .container {
+.container {
     overflow: hidden;
   }
   
-  .show {
+.show {
     display: block;
   }
   
-  .btn {
+.btn {
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -258,19 +258,30 @@ ul.checkbox li {
     cursor: pointer;
   }
   
-  .btn:hover {
+.btn:hover {
     background-color:  rgb(133, 218, 189);
   }
   
-  .btn.active {
+.btn.active {
     background-color:  rgb(133, 218, 189);
      color: white;
   }
 
-  .header1 h1 a:link {
+.header1 h1 a:link {
     text-decoration: none;
   }
 
-  #myBtnContainer {
+#myBtnContainer {
     margin-left: 35px;
   }
+
+
+p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: red;
+    text-align: center;
+    border: 1px solid #d56297;
+    width: 493px;
+    background-color: lightpink;
+}
