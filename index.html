@@ -44,11 +44,16 @@
 </body>
 
 <script>
-    const authLink = document.getElementById('auth-link');
-    const storedUser = sessionStorage.getItem('user');
-    const user = storedUser ? JSON.parse(storedUser) : undefined;
+    const user = (() => {
+        const storedUser = sessionStorage.getItem('user');
+        return storedUser
+            ? JSON.parse(storedUser)
+            : undefined;
+    })();
+
     console.log(user);
 
+    const authLink = document.getElementById('auth-link');
     if(user){
         authLink.textContent = 'Logout';
         authLink.href = 'auth.html?logout=true'
@@ -56,7 +61,6 @@
         authLink.textContent = 'Login';
         authLink.href = 'auth.html?login=true'
     }
-
 </script>
 
 </html>
