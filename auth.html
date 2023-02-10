@@ -75,7 +75,7 @@
         }
         const isAuthenticated = await auth0Client.isAuthenticated();
         const userProfile = await auth0Client.getUser();
-        if(userProfile){
+        if(userProfile && userProfile !== "undefined"){
             sessionStorage.setItem('user', JSON.stringify(userProfile));
         } else {
             sessionStorage.removeItem('user');
