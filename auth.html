@@ -57,7 +57,7 @@
 
         const isAuthenticated = await auth0Client.isAuthenticated();
         const userProfile = await auth0Client.getUser();
-        sessionStorage.setItem('user', userProfile);
+        sessionStorage.setItem('user', JSON.stringify(userProfile));
         window.location = '/';
 
         // Assumes an element with id "profile" in the DOM
