@@ -279,9 +279,9 @@ ul.checkbox li.focus  {
 p{
     font-family: sans-serif;
     font-size: 15px;
-    color: red;
+    color: rgb(110, 110, 110);
     text-align: center;
-    border: 1px solid #d56297;
+    border: 1px solid #4396bc;
     width: 493px;
-    background-color: lightpink;
+    background-color: rgb(189, 211, 236);
 }
