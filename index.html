@@ -21,7 +21,7 @@
                     <li><a href="features/nonprofit.html">Non-profit</a></li>
                     <li><a href="features/blog.html">Blog</a></li>
                     <li><a href="features/donate.html">Donate</a></li>
-                    <li><a href="auth.html?login=true">Login</a></li>
+                    <li><a id="auth-link">---</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,5 +42,20 @@
     </div>
 
 </body>
+
+<script>
+    const authLink = document.getElementById('auth-link');
+    const storedUser = sessionStorage.getItem('user');
+    const user = storedUser ? JSON.parse(storedUser) : undefined;
+
+    if(user){
+        authLink.textContent = 'Logout';
+        authLink.href = 'auth.html?logout=true'
+    } else {
+        authLink.textContent = 'Login';
+        authLink.href = 'auth.html?login=true'
+    }
+
+</script>
 
 </html>
