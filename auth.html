@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!--
+    notes:
+    https://auth0.com/docs/quickstart/spa/vanillajs/interactive
+-->
+
+<body>
+    <button id="login">Login</button>
+    <button id="logout">Logout</button>
+    <div id="profile"></div>
+</body>
+
+
+<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+
+<script>
+    const auth0config = {
+        domain: "dev-yhphcn11gle7cx10.us.auth0.com",
+        clientId: "J00u6Cdha88YftndddDw8jal8C0AbRUr",
+        authorizationParams: {
+            redirect_uri: window.location.origin
+        }
+    };
+
+    const auth0callback = async (auth0Client) => {
+        // Assumes a button with id "login" in the DOM
+        const loginButton = document.getElementById("login");
+
+        loginButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            auth0Client.loginWithRedirect();
+        });
+
+        if (location.search.includes("state=") && 
+            (location.search.includes("code=") || 
+            location.search.includes("error="))) {
+            await auth0Client.handleRedirectCallback();
+            window.history.replaceState({}, document.title, "/");
+        }
+
+        // Assumes a button with id "logout" in the DOM
+        const logoutButton = document.getElementById("logout");
+
+        logoutButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            auth0Client.logout();
+        });
+
+        const isAuthenticated = await auth0Client.isAuthenticated();
+        const userProfile = await auth0Client.getUser();
+
+        // Assumes an element with id "profile" in the DOM
+        const profileElement = document.getElementById("profile");
+
+        if (isAuthenticated) {
+            profileElement.style.display = "block";
+            profileElement.innerHTML = `
+                    <p>${userProfile.name}</p>
+                    <img src="${userProfile.picture}" />
+                `;
+        } else {
+            profileElement.style.display = "none";
+        }
+    }
+
+    auth0
+        .createAuth0Client(auth0config)
+        .then(auth0callback);
+</script>
