@@ -4,11 +4,47 @@
     notes:
     https://auth0.com/docs/quickstart/spa/vanillajs/interactive
 -->
+<head>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        @-webkit-keyframes spin {
+          to {
+            stroke-dashoffset: -264;
+          }
+        }
 
+        @keyframes spin {
+          to {
+            stroke-dashoffset: -264;
+          }
+        }
+
+        .spinner {
+            width: 3rem;
+            height: auto;
+        }
+        .spinner circle {
+            fill: none;
+            stroke: slategray;
+            stroke-width: 16;
+            stroke-linecap: round;
+            stroke-dasharray: 0, 0, 70, 194;
+            stroke-dashoffset: 0;
+            animation: spin 0.5s infinite linear;
+            -webkit-animation: spin 0.5s infinite linear;
+        }
+    </style>
+</head>
 <body>
-    <!-- <button id="login">Login</button>
-    <button id="logout">Logout</button>
-    <div id="profile"></div> -->
+    <svg class="spinner" viewBox="0 0 100 100" width="20" height="20">
+        <circle cx="50" cy="50" r="42" transform="rotate(-90,50,50)" />
+    </svg>
 </body>
 
 
@@ -58,7 +94,7 @@
         const isAuthenticated = await auth0Client.isAuthenticated();
         const userProfile = await auth0Client.getUser();
         sessionStorage.setItem('user', JSON.stringify(userProfile));
-        window.location = '/';
+        //window.location = '/';
 
         // Assumes an element with id "profile" in the DOM
         // const profileElement = document.getElementById("profile");
