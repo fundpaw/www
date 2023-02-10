@@ -173,9 +173,10 @@ a.picture:hover{
     background-position-x: center;
     background-position-y: center;
 }
-.column + .column {
-    margin-left: 2em;
+/*.column + .column {
+  
 }
+*/
 .column .title {
     font-size: x-large;
     background: rgb(87 152 183);
