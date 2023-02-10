@@ -57,19 +57,21 @@
 
         const isAuthenticated = await auth0Client.isAuthenticated();
         const userProfile = await auth0Client.getUser();
+        sessionStorage.setItem('user', userProfile);
+        window.location = '/';
 
         // Assumes an element with id "profile" in the DOM
-        const profileElement = document.getElementById("profile");
+        // const profileElement = document.getElementById("profile");
 
-        if (isAuthenticated) {
-            profileElement.style.display = "block";
-            profileElement.innerHTML = `
-                    <p>${userProfile.name}</p>
-                    <img src="${userProfile.picture}" />
-                `;
-        } else {
-            profileElement.style.display = "none";
-        }
+        // if (isAuthenticated) {
+        //     profileElement.style.display = "block";
+        //     profileElement.innerHTML = `
+        //             <p>${userProfile.name}</p>
+        //             <img src="${userProfile.picture}" />
+        //         `;
+        // } else {
+        //     profileElement.style.display = "none";
+        // }
     }
 
     auth0
