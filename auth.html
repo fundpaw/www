@@ -67,7 +67,6 @@
         if(location.search.includes("logout=")){
             auth0Client.logout();
         }
-
         if (location.search.includes("state=") && 
             (location.search.includes("code=") || 
             location.search.includes("error="))
@@ -76,7 +75,11 @@
         }
         const isAuthenticated = await auth0Client.isAuthenticated();
         const userProfile = await auth0Client.getUser();
-        sessionStorage.setItem('user', JSON.stringify(userProfile));
+        if(userProfile){
+            sessionStorage.setItem('user', JSON.stringify(userProfile));
+        } else {
+            sessionStorage.removeItem('user');
+        }
         window.location = '/';
     }
 
