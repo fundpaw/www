@@ -36,7 +36,13 @@ h5{
 
 .content{
     border: 1px ridge gray;
-    height: 200vh;
+    height: 230vh;
+    padding: 20px;
+}
+
+.content-long {
+    border: 1px ridge gray;
+    height: 280vh;
     padding: 20px;
 }
 
