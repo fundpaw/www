@@ -88,4 +88,15 @@ h4{
     font-weight: lighter;
     margin-top: -39px;
     margin-right: 29px;
+    text-decoration: none;
+}
+
+h4 a:hover{
+    color: aquamarine;
+    text-decoration: none;
+   
+}
+
+h4 a:link{
+    text-decoration: none;
 }
