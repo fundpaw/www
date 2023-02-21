@@ -1,11 +1,14 @@
 body{
     height: 180vh;
     padding: 0;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background: #ffffff;
     font-family: sans-serif;
+    justify-content: center;
+    width: 900px;
    
 }
 
@@ -38,6 +41,7 @@ h5{
     border: 1px ridge gray;
     height: 170vh;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 .comment-box{
@@ -99,4 +103,8 @@ h4 a:hover{
 
 h4 a:link{
     text-decoration: none;
+}
+
+.contentbox2{
+    background-color: rgb(255, 255, 255);
 }
