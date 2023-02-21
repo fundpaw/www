@@ -64,3 +64,28 @@ input{
     font-size: 15px;
     font-weight: 200;
 }
+
+.recentpost li{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 20px;
+}
+
+h4{
+    float: right;
+    height: 632px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: -39px;
+    margin-right: 29px;
+}
