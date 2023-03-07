@@ -38,6 +38,9 @@ h5{
     border: 1px ridge gray;
     height: 150vh;
     padding: 20px;
+    width: 800px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 .comment-box{
@@ -104,4 +107,7 @@ h4 a:link{
 
 .contentbox2{
     background-color: rgb(255, 255, 255);
+    width: 850px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
