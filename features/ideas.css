@@ -171,7 +171,7 @@ div#main\ wrapper {
     font-weight: lighter;
     font-size: 25px;
     display: grid;
-    margin-left: 20px;
+    margin-left: 30px;
   
 }
 
@@ -191,13 +191,10 @@ div#main\ wrapper {
     font-weight: lighter;
     font-size: 25px;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 22px;
     margin-right: 10px;
     border-bottom: ridge;
-    border-width: 2px;
- 
-    
-   
+    border-width: 2px;  
 }
 
 input[type=text] {
@@ -284,4 +281,53 @@ p{
     border: 1px solid #4396bc;
     width: 493px;
     background-color: rgb(189, 211, 236);
+}
+
+
+
+
+/* for Category list*/
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    background-color: rgb(216, 242, 242);
+    margin-left: 18px;
+    color: #3d3d3d;
+    font-size: 18px;
+      font-family: sans-serif;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+
+.dropdown button{
+    background-color: rgb(166, 221, 209);
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    border: rgb(235, 235, 235);
+    border-style: ridge;
+    border-width: 2px;
+    box-shadow: #efefef;
+    color: #3d3d3d;
+    padding: 10px;
+    font-family: sans-serif;
 }
