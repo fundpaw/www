@@ -20,7 +20,7 @@ h1{
 
 p{
     margin: 20px;
-    font-size: medium;
+    font-size: large;
     font-family: sans-serif;
     padding-left: 20px;
     padding-right: 20px;
@@ -107,4 +107,16 @@ h4 a:link{
 
 .contentbox2{
     background-color: rgb(255, 255, 255);
+}
+
+ul {
+    color: red;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+ul li {
+    margin-left: 30px;
+    color: black;
+    
 }
