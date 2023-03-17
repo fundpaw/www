@@ -297,10 +297,10 @@ p{
     width: 100%;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-    background-color: rgb(216, 242, 242);
+    background-color: rgb(208, 236, 230);
     margin-left: 18px;
     color: #3d3d3d;
-    font-size: 18px;
+    font-size: 20px;
       font-family: sans-serif;
   }
 .dropdown:hover .dropdown-content {
@@ -319,7 +319,7 @@ p{
 
 .dropdown button{
     background-color: rgb(166, 221, 209);
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     margin-left: 18px;
     margin-top: 20px;
