@@ -34,12 +34,11 @@ body {
     /* display: inline; */
 }
 
-#menu ul li a {
+#menu ul li > a {
     /* display: inline-block; */
     font-family: sans-serif;
     font-size: 1.5em;
     /* font-weight: bold; */
-    text-transform: lowercase;
     text-decoration: none;
     /* 
     background-color: inherit;
@@ -49,16 +48,6 @@ body {
     color: rgb(51, 90, 79);
     transition: color 0.5s linear;
 }
-
-#menu ul li a:hover{
-    color: aquamarine;
-}
-
-#menu ul li :active{
-    color: aquamarine;
-}
-
-
 
 #content{
     margin: 0 auto;
@@ -120,6 +109,9 @@ div#main\ wrapper {
     position: relative;
 }
 #auth-link #userMenu {
+    display: flex;
+    flex-direction: column;
+   
     position: absolute;
     border-radius: 5px;
     right: 0px;
@@ -143,7 +135,11 @@ div#main\ wrapper {
     transform: rotate( 45deg );
 }
 
-
+#userMenu a {
+    color: #262626;
+    text-decoration: none;
+    font-size: 15px;
+}
 
 
 
