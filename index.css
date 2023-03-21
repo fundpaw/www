@@ -142,5 +142,32 @@ div#main\ wrapper {
 }
 
 
+#profile-content {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: x-large;
+   
+}
 
 
+#profile-content ul li {
+    margin-bottom: 2.5rem;
+    list-style: none;
+   
+}
+
+#profile-content a {
+    text-decoration: none;
+}
+
+.content2 {
+    color: red;
+    background-color: #c1d9d9;
+    height: 351px;
+    margin-left: 148px;
+    margin-top: -338px;
+    margin-right: 181px;
+}
