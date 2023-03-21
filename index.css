@@ -149,6 +149,8 @@ div#main\ wrapper {
     flex-direction: column;
     align-items: flex-start;
     font-size: x-large;
+    margin-top: 40px;
+    margin-left: 56px;
    
 }
 
@@ -157,17 +159,19 @@ div#main\ wrapper {
     margin-bottom: 2.5rem;
     list-style: none;
    
+   
 }
 
 #profile-content a {
     text-decoration: none;
+    color: rgba(110, 109, 109, 0.978);
 }
 
 .content2 {
     color: red;
-    background-color: #c1d9d9;
+    background-color: #c5c5c5;
     height: 351px;
-    margin-left: 148px;
-    margin-top: -338px;
+    margin-left: 175px;
+    margin-top: -351px;
     margin-right: 181px;
 }
