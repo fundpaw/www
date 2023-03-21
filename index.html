@@ -55,8 +55,17 @@
 
     const authLink = document.getElementById('auth-link');
     if(user){
-        authLink.textContent = 'Logout';
-        authLink.href = 'auth.html?logout=true'
+        authLink.innerHTML = `
+            <img class="userpic" src=${user.picture} />
+            <div id="userMenu" class="hidden">
+                <span>${user.name}</span>
+                <a href="auth.html?logout=true">Logout</a>
+            </div>
+        `;
+        const userMenu = authLink.querySelector('#userMenu');
+        authLink.querySelector('.userpic').onclick = () => {
+            userMenu.classList.toggle('hidden');
+        };
     } else {
         authLink.textContent = 'Login';
         authLink.href = 'auth.html?login=true'

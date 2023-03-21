@@ -1,0 +1,19 @@
+{
+  "name": "fundpaw",
+  "version": "1.0.0",
+  "description": "bump",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fundpaw/www.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fundpaw/www/issues"
+  },
+  "homepage": "https://github.com/fundpaw/www#readme"
+}

@@ -1,3 +1,7 @@
-# www
+# fundpaw
 
-bump
+
+### local
+```
+npx http-server
+```
